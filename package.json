@@ -1,0 +1,9 @@
+{
+  "name": "serverless-react",
+  "private": true,
+  "license": "MIT",
+  "workspaces": [
+    "donate-app",
+    "donate-session"
+  ]
+}
