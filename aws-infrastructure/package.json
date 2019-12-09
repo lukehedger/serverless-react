@@ -1,0 +1,23 @@
+{
+  "name": "aws-infrastructure",
+  "private": true,
+  "version": "0.0.0",
+  "bin": {
+    "aws": "bin/infrastructure.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "deploy": "yarn build && cdk deploy --profile cruk",
+    "synth": "cdk synth --profile cruk"
+  },
+  "devDependencies": {
+    "aws-cdk": "1.18.0",
+    "typescript": "3.7.2"
+  },
+  "dependencies": {
+    "@aws-cdk/aws-apigateway": "1.18.0",
+    "@aws-cdk/aws-dynamodb": "1.18.0",
+    "@aws-cdk/aws-lambda": "1.18.0",
+    "@aws-cdk/core": "^1.18.0"
+  }
+}

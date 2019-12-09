@@ -1,4 +1,8 @@
 .DS_Store
 .parcel-cache
+aws-infrastructure/cdk.out
+aws-infrastructure/**/*.d.ts
+aws-infrastructure/**/*.js
 donate-app/dist
+donate-session/**/*.js
 node_modules

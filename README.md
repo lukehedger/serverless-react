@@ -9,5 +9,5 @@ yarn
 ## Develop
 
 ```sh
-make dev
+yarn dev
 ```

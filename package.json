@@ -2,7 +2,11 @@
   "name": "serverless-react",
   "private": true,
   "license": "MIT",
+  "scripts": {
+    "dev": "yarn --cwd donate-app dev"
+  },
   "workspaces": [
+    "aws-infrastructure",
     "donate-app",
     "donate-session"
   ]
