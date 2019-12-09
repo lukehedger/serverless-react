@@ -7,7 +7,7 @@ import {
   APIGatewayProxyResult,
   Handler
 } from "aws-lambda";
-import * as cuid from "cuid";
+import cuid from "cuid";
 
 export const handler: Handler = async (
   event: APIGatewayProxyEvent
@@ -18,12 +18,22 @@ export const handler: Handler = async (
 
       const sessionID = cuid();
 
+      // TODO: Implement event.body to DynamoDB key/value parsing
+
       const batchWriteItemInput = {
         RequestItems: {
-          [`${process.env.PRIMARY_KEY}`]: sessionID,
-          ...JSON.parse(event.body)
-        },
-        TableName: process.env.TABLE_NAME
+          [`${process.env.TABLE_NAME}`]: [
+            {
+              PutRequest: {
+                Item: {
+                  [`${process.env.PRIMARY_KEY}`]: {
+                    S: sessionID
+                  }
+                }
+              }
+            }
+          ]
+        }
       };
 
       const batchWriteItemCommand = new BatchWriteItemCommand(
