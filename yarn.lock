@@ -63,6 +63,18 @@
     "@aws-cdk/core" "1.18.0"
     "@aws-cdk/cx-api" "1.18.0"
 
+"@aws-cdk/aws-cloudfront@1.18.0":
+  version "1.18.0"
+  resolved "https://registry.yarnpkg.com/@aws-cdk/aws-cloudfront/-/aws-cloudfront-1.18.0.tgz#85504103f924c0784ea0aeb7007b45482c85858e"
+  integrity sha512-xqxECDkUQcj5SHsZ4FGKDd9l9MYRzzHNL/Wb+Hbj2WHJKOrM0YLFmvEfAr/hLhVk5fC98JUAXkXAXbkL19jmtw==
+  dependencies:
+    "@aws-cdk/aws-certificatemanager" "1.18.0"
+    "@aws-cdk/aws-iam" "1.18.0"
+    "@aws-cdk/aws-kms" "1.18.0"
+    "@aws-cdk/aws-lambda" "1.18.0"
+    "@aws-cdk/aws-s3" "1.18.0"
+    "@aws-cdk/core" "1.18.0"
+
 "@aws-cdk/aws-cloudwatch@1.18.0":
   version "1.18.0"
   resolved "https://registry.yarnpkg.com/@aws-cdk/aws-cloudwatch/-/aws-cloudwatch-1.18.0.tgz#4e6eac36aef860334ba251f00d69183593b7d1e5"
@@ -173,6 +185,19 @@
     "@aws-cdk/aws-s3" "1.18.0"
     "@aws-cdk/core" "1.18.0"
     "@aws-cdk/cx-api" "1.18.0"
+
+"@aws-cdk/aws-s3-deployment@1.18.0":
+  version "1.18.0"
+  resolved "https://registry.yarnpkg.com/@aws-cdk/aws-s3-deployment/-/aws-s3-deployment-1.18.0.tgz#b678638449ddfce4941edce48ea6ce677c9be17a"
+  integrity sha512-vKhnxvKSaIXGxSs7Bjby3/tuH2ODT1SgKWAss61yJBbdwHhNxAZ0iPV55OiiUlRSXZ1rHErUNqIzx3Q1905Alg==
+  dependencies:
+    "@aws-cdk/aws-cloudformation" "1.18.0"
+    "@aws-cdk/aws-cloudfront" "1.18.0"
+    "@aws-cdk/aws-iam" "1.18.0"
+    "@aws-cdk/aws-lambda" "1.18.0"
+    "@aws-cdk/aws-s3" "1.18.0"
+    "@aws-cdk/aws-s3-assets" "1.18.0"
+    "@aws-cdk/core" "1.18.0"
 
 "@aws-cdk/aws-s3@1.18.0":
   version "1.18.0"
